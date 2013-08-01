@@ -14,12 +14,16 @@
 		      surround
 		      starter-kit
                       starter-kit-lisp
+                      starter-kit-ruby
                       starter-kit-bindings
                       starter-kit-eshell
                       clojure-mode
                       clojure-test-mode
                       nrepl
                       ggtags
+                      color-theme-solarized
+                      yaml-mode
+                      flymake-yaml
                       ))
 
 (dolist (p my-packages)
@@ -27,6 +31,7 @@
     (package-install p)))
 
 (add-to-list 'load-path "~/.emacs.d")
+(add-to-list 'load-path "~/share/emacs/site-lisp")
 (add-to-list 'load-path "~/.emacs.d/autocomplete/")
 (require 'auto-complete)
 (require 'auto-complete-config)
@@ -49,3 +54,10 @@
 (require 'yasnippet)
 (yas-global-mode 1)
 
+(linum-mode t)
+
+; (add-to-list 'load-path "~/.emacs.d/rdebug")
+; (require 'rdebug)
+(load-theme 'solarized-dark t)
+
+(add-hook 'yaml-mode-hook 'flymake-yaml-load)
