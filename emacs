@@ -10,6 +10,7 @@
 (defvar my-packages '(
                       evil
                       js2-mode
+                      angular-snippets
                       skewer-mode
 		      surround
 		      starter-kit
