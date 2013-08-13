@@ -58,6 +58,20 @@
 
 ; (add-to-list 'load-path "~/.emacs.d/rdebug")
 ; (require 'rdebug)
-(load-theme 'solarized-dark t)
+(load-theme 'zenburn t)
 
 (add-hook 'yaml-mode-hook 'flymake-yaml-load)
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(custom-safe-themes
+   (quote
+    ("fc6e906a0e6ead5747ab2e7c5838166f7350b958d82e410257aeeb2820e8a07a" default))))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
