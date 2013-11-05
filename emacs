@@ -61,6 +61,23 @@
 (load-theme 'zenburn t)
 
 (add-hook 'yaml-mode-hook 'flymake-yaml-load)
+
+;(add-to-list 'exec-path "/usr/local/share/npm/bin")
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;; Clojure Mode(s)
+(defun nrepl-reset ()
+  (interactive)
+  (set-buffer "*nrepl*")
+  (goto-char (point-max))
+  (insert "(user/reset)")
+  (nrepl-return))
+
+(defun mbp-clojure-mode-keybindings ()
+  (local-set-key (kbd "<f5>") 'nrepl-reset))
+
+(add-hook 'clojure-mode-hook 'mbp-clojure-mode-keybindings)
+(load "my-org-mode")
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
