@@ -10,6 +10,7 @@
 (defvar my-packages '(
                       evil
                       js2-mode
+                      angular-snippets
                       skewer-mode
 		      surround
 		      starter-kit
@@ -39,6 +40,7 @@
 (ac-config-default)
 
 (evil-mode t)
+(global-surround-mode t)
 
 (add-to-list 'load-path "~/.emacs.d/ac-js2")
 (require 'ac-js2)
