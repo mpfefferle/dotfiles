@@ -10,7 +10,7 @@
 (defvar my-packages '(
                       evil
                       js2-mode
-                      angular-snippets
+                      ;angular-snippets
                       skewer-mode
 		      surround
 		      starter-kit
@@ -87,7 +87,8 @@
  ;; If there is more than one, they won't work right.
  '(custom-safe-themes
    (quote
-    ("fc6e906a0e6ead5747ab2e7c5838166f7350b958d82e410257aeeb2820e8a07a" default))))
+    ("fc6e906a0e6ead5747ab2e7c5838166f7350b958d82e410257aeeb2820e8a07a" default)))
+ '(js2-bounce-indent-p nil))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
