@@ -18,6 +18,7 @@
                       starter-kit-ruby
                       starter-kit-bindings
                       starter-kit-eshell
+                      starter-kit-ruby
                       clojure-mode
                       clojure-test-mode
                       nrepl
@@ -25,6 +26,7 @@
                       color-theme-solarized
                       yaml-mode
                       flymake-yaml
+                      ecb
                       ))
 
 (dolist (p my-packages)
