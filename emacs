@@ -26,8 +26,7 @@
                       color-theme-solarized
                       yaml-mode
                       flymake-yaml
-                      ecb
-                      ))
+                              ))
 
 (dolist (p my-packages)
   (when (not (package-installed-p p))
