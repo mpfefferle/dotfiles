@@ -74,10 +74,20 @@
   (insert "(user/reset)")
   (nrepl-return))
 
+(defun nrepl-run-all-tests ()
+  (interactive)
+  (set-buffer "*nrepl*")
+  (goto-char (point-max))
+  (insert "(user/run-all-tests)")
+  (nrepl-return))
+
 (defun mbp-clojure-mode-keybindings ()
-  (local-set-key (kbd "<f5>") 'nrepl-reset))
+  (local-set-key (kbd "<f5>") 'nrepl-reset)
+  (local-set-key (kbd "<f6>") 'nrepl-run-all-tests))
 
 (add-hook 'clojure-mode-hook 'mbp-clojure-mode-keybindings)
+
+
 (load "my-org-mode")
 
 (custom-set-variables
