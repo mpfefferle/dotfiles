@@ -33,6 +33,9 @@
     (package-install p)))
 
 (add-to-list 'load-path "~/.emacs.d")
+;(eval-after-load 'coffee-mode '(load-library "~/.emacs.d/setup-coffescript.el"))
+(require 'setup-coffeescript)
+
 (add-to-list 'load-path "~/share/emacs/site-lisp")
 (add-to-list 'load-path "~/.emacs.d/autocomplete/")
 (add-to-list 'load-path "~/.emacs.d/popup")
