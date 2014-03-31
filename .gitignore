@@ -17,3 +17,4 @@ emacs.d/tramp
 emacs.d/url
 
 emacs.d/.smex-items
+tmuxinator/*.yml
