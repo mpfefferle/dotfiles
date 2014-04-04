@@ -41,6 +41,7 @@
 
 (add-to-list 'load-path "~/share/emacs/site-lisp")
 (require 'setup-auto-complete)
+(require 'setup-fill-column-indicator)
 
 (evil-mode t)
 (global-surround-mode t)
