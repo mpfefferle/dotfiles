@@ -40,12 +40,7 @@
 (eval-after-load 'python-mode '(require 'setup-python))
 
 (add-to-list 'load-path "~/share/emacs/site-lisp")
-(add-to-list 'load-path "~/.emacs.d/autocomplete/")
-(add-to-list 'load-path "~/.emacs.d/popup")
-(require 'auto-complete)
-(require 'auto-complete-config)
-(add-to-list 'ac-dictionary-directories "~/.emacs.d/autocomplete//ac-dict")
-(ac-config-default)
+(require 'setup-auto-complete)
 
 (evil-mode t)
 (global-surround-mode t)
