@@ -83,7 +83,7 @@
   (interactive)
   (set-buffer "*nrepl*")
   (goto-char (point-max))
-  (insert "(user/run-all-tests)")
+  (insert "(user/reset-and-test)")
   (nrepl-return))
 
 (defun mbp-clojure-mode-keybindings ()
