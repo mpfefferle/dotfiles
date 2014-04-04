@@ -35,7 +35,7 @@
 (add-to-list 'load-path "~/.emacs.d")
 ;(eval-after-load 'coffee-mode '(load-library "~/.emacs.d/setup-coffescript.el"))
 (require 'setup-osx)
-;(eval-after-load 'ido (require 'setup-ido))
+(eval-after-load 'ido '(require 'setup-ido))
 (eval-after-load 'coffee-mode '(require 'setup-coffeescript))
 (eval-after-load 'python-mode '(require 'setup-python))
 
