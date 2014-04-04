@@ -93,7 +93,7 @@
 (add-hook 'clojure-mode-hook 'mbp-clojure-mode-keybindings)
 
 
-(load "my-org-mode")
+(eval-after-load 'org-mode '(load "my-org-mode"))
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
