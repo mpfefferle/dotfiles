@@ -37,7 +37,7 @@
 (require 'setup-osx)
 (eval-after-load 'ido '(require 'setup-ido))
 (eval-after-load 'coffee-mode '(require 'setup-coffeescript))
-(eval-after-load 'python-mode '(require 'setup-python))
+(require 'setup-python)
 
 (add-to-list 'load-path "~/share/emacs/site-lisp")
 (require 'setup-auto-complete)
