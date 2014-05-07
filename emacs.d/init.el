@@ -37,6 +37,7 @@
 (require 'setup-osx)
 (eval-after-load 'ido '(require 'setup-ido))
 (eval-after-load 'coffee-mode '(require 'setup-coffeescript))
+(eval-after-load 'haskell-mode '(require 'setup-haskell-mode))
 ;; (eval-after-load 'python-mode '(require 'setup-python))
 (require 'setup-python)
 
