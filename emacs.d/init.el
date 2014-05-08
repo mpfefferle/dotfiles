@@ -41,6 +41,7 @@
 ;; (eval-after-load 'python-mode '(require 'setup-python))
 (require 'setup-python)
 (require 'setup-scss-mode)
+(require 'setup-markdown-mode)
 
 (add-to-list 'load-path "~/share/emacs/site-lisp")
 (require 'setup-auto-complete)
